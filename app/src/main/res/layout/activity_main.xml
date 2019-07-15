@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edt_name"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_name"
+        android:layout_marginTop="10dp"
+        android:hint="@string/edt_pass"
+        android:padding="15dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:text=""
+        android:textSize="@dimen/text_size" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:padding="15dp"
+        android:text="@string/btn_login" />
+</RelativeLayout>
